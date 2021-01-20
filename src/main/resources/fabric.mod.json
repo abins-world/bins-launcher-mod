@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "abinworld-mod",
+  "version": "${version}",
+  "name": "ABinWorldMod",
+  "description": "",
+  "authors": [
+    "A_Bins",
+    "NamuTree0345"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/abinworld-mod/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "me.namutree0345andbins.abinworldmod.client.AbinworldModClient"
+    ],
+    "main": [
+      "me.namutree0345andbins.abinworldmod.AbinworldMod"
+    ]
+  },
+  "mixins": [
+    "abinworld-mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.1",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
